@@ -1,0 +1,50 @@
+Game screen : 800x600
+Tank size   : 60x60
+
+Controls:
+WASD to move and mouse to aim/shoot
+
+Score conventions:
+•	Standard Tank – 100 points
+•	Mine Tank – 75 points
+•	Rocket Tank – 150 points
+•	Boss Tank – 500 points
+•	Mines – 25 points
+•	Life – 2000 points
+
+
+
+
+
+Main menu:
+Play
+Quit
+Options	-	Difficulty, sound
+Load
+
+
+Options menu:
+Difficulty leveling
+Sound settings
+Tank graphic? - consider at end. Whoo, customizability
+
+
+In-game:
+WASD
+Mouse
+ESC	-	pause menu?
+
+
+Pause menu:
+Resume
+Save & Quit
+Sound On/Off
+
+
+End Game:
+Display on whether win or lose
+If exited mid-game, save state.
+Replay/Acknowledge - return to main menu
+
+
+

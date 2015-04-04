@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Project">
+      <UniqueIdentifier>{4d5a48e7-d279-4df1-9700-db5c06d1fe22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Resources">
+      <UniqueIdentifier>{1b04ba72-afe8-4ff1-b09f-9ebbfd79d070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Managers">
+      <UniqueIdentifier>{4e63805e-4e09-40c8-b89a-a827e2d522c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Tracking">
+      <UniqueIdentifier>{5fad6f64-7f70-4df3-b9a6-25c5d2c02747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Resources\Early Dependencies">
+      <UniqueIdentifier>{500a41ab-b12f-49d9-96ba-ae50d1e22bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Game Functionality">
+      <UniqueIdentifier>{30ea2230-c638-4c61-9f0f-e85cc9fb2fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Snake Functionality">
+      <UniqueIdentifier>{03c306e0-af1e-42b6-9d1b-df3cc2cf80ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Snake Functionality\CellTypes">
+      <UniqueIdentifier>{a492d188-a83b-4545-ae27-71e8db22fde4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Game Functionality\Levels">
+      <UniqueIdentifier>{61fa6019-7058-45b8-b2a8-2a47e4e5e7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Managers\EventSystem">
+      <UniqueIdentifier>{cc3832b6-04b2-497c-9b9e-7f44165ddfb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Managers\EventSystem\Events">
+      <UniqueIdentifier>{8cfcf028-d274-4681-a6b6-4c14fca7f7ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h">
+      <Filter>Project\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Project\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsBuffer.h">
+      <Filter>Project\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Project\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Trackable.h">
+      <Filter>Project\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Project\Resources\Early Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Project\Resources\Early Dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceTracker.h">
+      <Filter>Project\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Project\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryTracker.h">
+      <Filter>Project\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Project\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionsUtil.h">
+      <Filter>Project\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>Project\Game Functionality</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Project\Game Functionality</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake.h">
+      <Filter>Project\Snake Functionality</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Project\Game Functionality</Filter>
+    </ClInclude>
+    <ClInclude Include="MiscDataDef.h">
+      <Filter>Project\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="WallCell.h">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="FoodCell.h">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="HeadCell.h">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Project\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitManager.h">
+      <Filter>Project\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Project\Managers\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EventListener.h">
+      <Filter>Project\Managers\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem.h">
+      <Filter>Project\Managers\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Project\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="DownPressedEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EscPressedEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftPressedEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="RightPressedEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SpacePressedEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="UpPressedEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.h">
+      <Filter>Project\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BodyCell.h">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="GridUnit.h">
+      <Filter>Project\Snake Functionality</Filter>
+    </ClInclude>
+    <ClInclude Include="FloorCell.h">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelCompleteEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelFailedEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="ModEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCompleteEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SpeedCell.h">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowCell.h">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPointsEvent.h">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Project\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsBuffer.cpp">
+      <Filter>Project\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Project\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Project\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Trackable.cpp">
+      <Filter>Project\Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Project\Resources\Early Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Project\Resources\Early Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceTracker.cpp">
+      <Filter>Project\Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Project\Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryTracker.cpp">
+      <Filter>Project\Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>Project\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsSystem.cpp">
+      <Filter>Project\Game Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Project\Game Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Project\Game Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Project\Game Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="WallCell.cpp">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Project\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitManager.cpp">
+      <Filter>Project\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Project\Managers\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EventListener.cpp">
+      <Filter>Project\Managers\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem.cpp">
+      <Filter>Project\Managers\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Project\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake.cpp">
+      <Filter>Project\Snake Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="EscPressedEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="DownPressedEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="UpPressedEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="LeftPressedEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="RightPressedEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="SpacePressedEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManager.cpp">
+      <Filter>Project\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BodyCell.cpp">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="GridUnit.cpp">
+      <Filter>Project\Snake Functionality</Filter>
+    </ClCompile>
+    <ClCompile Include="HeadCell.cpp">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="FoodCell.cpp">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="FloorCell.cpp">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelCompleteEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelFailedEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="ModEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCompleteEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="SpeedCell.cpp">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowCell.cpp">
+      <Filter>Project\Snake Functionality\CellTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPointsEvent.cpp">
+      <Filter>Project\Managers\EventSystem\Events</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Levels\Level1.txt">
+      <Filter>Project\Game Functionality\Levels</Filter>
+    </Text>
+    <Text Include="Levels\Level2.txt">
+      <Filter>Project\Game Functionality\Levels</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

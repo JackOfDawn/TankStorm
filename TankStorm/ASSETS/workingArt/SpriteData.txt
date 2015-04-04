@@ -1,0 +1,2 @@
+greentank.png 32 32 8
+barrel.png 25 14 1

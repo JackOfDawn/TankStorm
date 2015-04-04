@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2CA17C7E-7CA1-4701-9AF9-14EFFC4B8011}</ProjectGuid>
+    <RootNamespace>TankStorm</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\..\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include;..\..\SDL2-devel-2.0.3-VC\SDL2_image-2.0.0\include;..\..\SDL2-devel-2.0.3-VC\SDL2_ttf-2.0.12\include;..\..\SDL2-devel-2.0.3-VC\SDL2_mixer-2.0.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86;..\..\SDL2-devel-2.0.3-VC\SDL2_image-2.0.0\lib\x86;..\..\SDL2-devel-2.0.3-VC\SDL2_ttf-2.0.12\lib\x86;..\..\SDL2-devel-2.0.3-VC\SDL2_mixer-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActivateSoundEffectsEvent.cpp" />
+    <ClCompile Include="AddPointsEvent.cpp" />
+    <ClCompile Include="AITank.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletManager.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="DeactivateSoundEffectsEvent.cpp" />
+    <ClCompile Include="DecreaseDifficultyEvent.cpp" />
+    <ClCompile Include="DecreaseMusicVolumeEvent.cpp" />
+    <ClCompile Include="DownPressedEvent.cpp" />
+    <ClCompile Include="EnterPressedEvent.cpp" />
+    <ClCompile Include="EscPressedEvent.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventListener.cpp" />
+    <ClCompile Include="EventSystem.cpp" />
+    <ClCompile Include="FireEvent.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameCompleteEvent.cpp" />
+    <ClCompile Include="GraphicsBuffer.cpp" />
+    <ClCompile Include="GraphicsSystem.cpp" />
+    <ClCompile Include="GridUnit.cpp" />
+    <ClCompile Include="IncreaseDifficultyEvent.cpp" />
+    <ClCompile Include="IncreaseMusicVolumeEvent.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="LeftPressedEvent.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LevelCompleteEvent.cpp" />
+    <ClCompile Include="LevelFailedEvent.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="LoadGameEvent.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryTracker.cpp" />
+    <ClCompile Include="SaveGameEvent.cpp" />
+    <ClCompile Include="SoundHandler.cpp" />
+    <ClCompile Include="TankDestroyedEvent.cpp" />
+    <ClCompile Include="ToggleOptionsEvent.cpp" />
+    <ClCompile Include="MouseLeftClickEvent.cpp" />
+    <ClCompile Include="MouseMoveEvent.cpp" />
+    <ClCompile Include="PerformanceTracker.cpp" />
+    <ClCompile Include="PlayerTank.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="RightPressedEvent.cpp" />
+    <ClCompile Include="SpacePressedEvent.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="TankMovement.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="ToggleMusicEvent.cpp" />
+    <ClCompile Include="Trackable.cpp" />
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="UnitManager.cpp" />
+    <ClCompile Include="UpPressedEvent.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActivateSoundEffectsEvent.h" />
+    <ClInclude Include="AddPointsEvent.h" />
+    <ClInclude Include="AITank.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletManager.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="DeactivateSoundEffectsEvent.h" />
+    <ClInclude Include="DecreaseDifficultyEvent.h" />
+    <ClInclude Include="DecreaseMusicVolumeEvent.h" />
+    <ClInclude Include="DownPressedEvent.h" />
+    <ClInclude Include="EnterPressedEvent.h" />
+    <ClInclude Include="EscPressedEvent.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventListener.h" />
+    <ClInclude Include="EventSystem.h" />
+    <ClInclude Include="FiredEvent.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameCompleteEvent.h" />
+    <ClInclude Include="GraphicsBuffer.h" />
+    <ClInclude Include="GraphicsSystem.h" />
+    <ClInclude Include="GridUnit.h" />
+    <ClInclude Include="IncreaseDifficultyEvent.h" />
+    <ClInclude Include="IncreaseMusicVolumeEvent.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="LeftPressedEvent.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LevelCompleteEvent.h" />
+    <ClInclude Include="LevelFailedEvent.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="LoadGameEvent.h" />
+    <ClInclude Include="MemoryTracker.h" />
+    <ClInclude Include="MiscDataDef.h" />
+    <ClInclude Include="SaveGameEvent.h" />
+    <ClInclude Include="SoundHandler.h" />
+    <ClInclude Include="TankDestroyedEvent.h" />
+    <ClInclude Include="ToggleOptionsEvent.h" />
+    <ClInclude Include="MouseLeftClickEvent.h" />
+    <ClInclude Include="MouseMoveEvent.h" />
+    <ClInclude Include="PerformanceTracker.h" />
+    <ClInclude Include="PlayerTank.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="RightPressedEvent.h" />
+    <ClInclude Include="SpacePressedEvent.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Tank.h" />
+    <ClInclude Include="TankMovement.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="ToggleMusicEvent.h" />
+    <ClInclude Include="Trackable.h" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitManager.h" />
+    <ClInclude Include="UpPressedEvent.h" />
+    <ClInclude Include="Vector2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\ASSETS\htc2_0407.png" />
+    <Image Include="..\ASSETS\MulticolorTanks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\LEVELS\Level1.txt" />
+    <Text Include="..\LEVELS\Level2.txt" />
+    <Text Include="..\LEVELS\Level3.txt" />
+    <Text Include="..\LEVELS\Level4.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
